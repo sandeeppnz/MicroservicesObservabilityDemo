@@ -3,14 +3,16 @@ using Shopping.Aggregator.Models;
 using System;
 using System.Collections.Generic;
 using System.Net.Http;
+using System.Security.AccessControl;
 using System.Threading.Tasks;
+using Microsoft.Extensions.Logging;
 
 namespace Shopping.Aggregator.Services
 {
     public class CatalogService : ICatalogService
     {
         private readonly HttpClient _client;
-
+        
         public CatalogService(HttpClient client)
         {
             _client = client ?? throw new ArgumentNullException(nameof(client));
