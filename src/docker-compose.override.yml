@@ -139,6 +139,7 @@ services:
       - "ApiSettings:CatalogUrl=http://catalog.api"
       - "ApiSettings:BasketUrl=http://basket.api"
       - "ApiSettings:OrderingUrl=http://ordering.api"
+      - "ElasticConfiguration:Uri=http://elasticsearch:9200"
     depends_on:
       - catalog.api
       - basket.api
@@ -151,6 +152,7 @@ services:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - "ApiSettings:GatewayAddress=http://ocelotapigw"
+      - "ElasticConfiguration:Uri=http://elasticsearch:9200"
     depends_on:
       - ocelotapigw
       - catalog.api
