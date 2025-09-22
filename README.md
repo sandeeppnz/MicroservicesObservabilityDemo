@@ -1,5 +1,8 @@
 This repository explores Elastic Search and Kibana logging to the existing microservices.
 
+<img width="880" height="293" alt="image" src="https://github.com/user-attachments/assets/bb2e800d-8e4e-4284-bf56-8c1adba32c7e" />
+
+
 <img width="1673" height="906" alt="image" src="https://github.com/user-attachments/assets/5a702e72-31a8-479f-a404-ca6a42cb81df" />
 
 
